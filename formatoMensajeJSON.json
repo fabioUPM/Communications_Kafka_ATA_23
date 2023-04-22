@@ -1,0 +1,52 @@
+[{
+	"src_robot": "1", 
+	"dst_robot": "2", 
+	"coms_id": "20",  
+	"msg_type": "10", 
+	"package":  
+		{
+			"src_loc": "X23Y56", 
+			"dst_loc": "X56X87", 
+			"length": "60", 
+			"weigth": "70", 
+			"width": "50"
+		},
+	"status":
+		{
+			"robot_id": "2",
+			"robot_location": "X45Y08", 
+			"battery": "67"
+		}	
+},
+
+{
+	"type": "object",
+	"required": ["src_robot", "dst_robot", "coms_id", "msg_type"],
+	"properties": { 
+	  "src_robot": { "type": "string" },
+	  "dst_robot": { "type": "string" },
+	  "coms_id": { "type": "string" },
+	  "msg_type": { "type": "string" },
+	  "package": {
+		"type": "object",
+		"properties": {
+		  "src_loc": { "type": "string" },
+		  "dst_loc": { "type": "string" },
+		  "length": { "type": "string" },
+		  "weigth": { "type": "string" },
+		  "width": { "type": "string" }
+		}
+	  },
+	  "status": {
+		"type": "object",
+		"properties": {
+		  "robot_id": { "type": "string" },
+		  "robot_location": { "type": "string" },
+		  "battery": { "type": "string" }
+		}
+	  }
+	}
+  }
+
+]
+  
